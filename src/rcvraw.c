@@ -1418,7 +1418,7 @@ extern int input_raw(raw_t *raw, int format, uint8_t data)
         case STRFMT_UBX   : return input_ubx   (raw,data);
         case STRFMT_SS2   : return input_ss2   (raw,data);
         case STRFMT_CRES  : return input_cres  (raw,data);
-        case STRFMT_STQ   : return input_stq   (raw,data);
+        // case STRFMT_STQ   : return input_stq   (raw,data);
         case STRFMT_JAVAD : return input_javad (raw,data);
         case STRFMT_NVS   : return input_nvs   (raw,data);
         case STRFMT_BINEX : return input_bnx   (raw,data);
@@ -1444,7 +1444,7 @@ extern int input_rawf(raw_t *raw, int format, FILE *fp)
         case STRFMT_UBX   : return input_ubxf   (raw,fp);
         case STRFMT_SS2   : return input_ss2f   (raw,fp);
         case STRFMT_CRES  : return input_cresf  (raw,fp);
-        case STRFMT_STQ   : return input_stqf   (raw,fp);
+        // case STRFMT_STQ   : return input_stqf   (raw,fp);
         case STRFMT_JAVAD : return input_javadf (raw,fp);
         case STRFMT_NVS   : return input_nvsf   (raw,fp);
         case STRFMT_BINEX : return input_bnxf   (raw,fp);
